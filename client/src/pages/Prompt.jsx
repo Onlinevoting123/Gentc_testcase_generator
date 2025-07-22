@@ -37,7 +37,7 @@ const Prompt = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-300 via-purple-300 to-indigo-400 px-4 py-8">
       <img
         onClick={() => navigate('/')}
-        src={assets.logo}
+        src={assets.log}
         className="absolute top-6 left-6 sm:top-8 sm:left-20 w-24 sm:w-32 cursor-pointer transition-transform duration-200 hover:scale-105"
         alt="Logo"
       />
