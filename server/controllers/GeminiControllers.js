@@ -11,7 +11,7 @@ export const getUserPrompt=async(req,res)=>{
         }
         const response = await ai.models.generateContent({
             model: "gemini-2.5-flash",
-            contents: `Give only 5 edge testcases for leetcode question ${prompt} no need of description and explanation just need input=''and output='' if the question is not in leetcode convey the number entered question is not present`,
+            contents: `Give only 5 edge testcases for leetcode question ${prompt} no need of description and explanation just need input= and output= if the question is not in leetcode convey the number entered question is not present`,
         });
         user.prompt=response.text;
         await user.save();
