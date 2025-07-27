@@ -18,7 +18,7 @@ const Prompt = () => {
       getUserData()
       let email = userData?.email || ''
       axios.defaults.withCredentials = true
-      const { data } = await axios.post(backendUrl + '/api/gemini/prompt', { prompt, email })
+      const { data } = await axios.post(backendUrl + '/api/gemini/e/prompt', { prompt, email })
 
       if (data.success) {
         console.log(data)
@@ -44,6 +44,7 @@ const Prompt = () => {
       <div className="flex flex-col items-center space-y-8 w-full max-w-md">
         <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-2xl w-full">
           <form onSubmit={onSubmitHandler} className="space-y-6">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png' className="w-10 h-10 object-contain"/>
             <h2 className="text-xl font-semibold text-indigo-900 text-center">Generate Test Cases</h2>
             <div className="flex items-center gap-3 w-full px-5 py-3 rounded-full bg-indigo-100 border border-indigo-300">
               <span className="text-sm font-medium text-indigo-800">No.</span>
