@@ -52,6 +52,7 @@ const Resetpass = () =>
             const otp=otpArray.join('')
             const {data} =  await axios.post(backendUrl + '/api/auth/verify-account', {otp})
             setIsOtpSubmited(true)
+            setOtp(otp)
     }
     const onSubmitPass=async(e)=>{
             e.preventDefault()
