@@ -10,7 +10,7 @@ import GeminiRouter from "./Routes/GeminiRouter.js";
 const app=express();
 const port=process.env.PORT || 10000
 connectDB();
-const allowedOrigins = ['https://testcase-generator-ai.vercel.app']
+const allowedOrigins = ['https://gentc-testcase-generator.vercel.app']
 
 app.use(express.json());
 app.use(cookieParser());
