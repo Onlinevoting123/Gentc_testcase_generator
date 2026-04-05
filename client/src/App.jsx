@@ -23,9 +23,11 @@ const App = () => {
     <div>
       <ToastContainer />
       <Routes>
-        <Route path='/' element={<div>
-      {window.location.replace("/google8d27faaf898df778.html")}
-    </div>}/>
+        <Route path='/' element={<iframe
+      src="/google8d27faaf898df778.html"
+      style={{ width: "100%", height: "100vh", border: "none" }}
+      title="Home"
+    />}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/emailverify' element={<Emailverify/>}/>
         <Route path='/resetpass' element={<Resetpass/>}/>
