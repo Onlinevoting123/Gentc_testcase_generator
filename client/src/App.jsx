@@ -3,6 +3,7 @@ import { Routes,Route } from 'react-router-dom'
 import Login from './pages/Login'
 import Emailverify from './pages/Emailverify'
 import Resetpass from './pages/Resetpass'
+import Home from './pages/Home'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Prompt from './pages/Prompt'
@@ -23,11 +24,7 @@ const App = () => {
     <div>
       <ToastContainer />
       <Routes>
-        <Route path='/' element={<iframe
-      src="/google8d27faaf898df778.html"
-      style={{ width: "100%", height: "100vh", border: "none" }}
-      title="Home"
-    />}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/emailverify' element={<Emailverify/>}/>
         <Route path='/resetpass' element={<Resetpass/>}/>
